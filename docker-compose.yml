@@ -146,6 +146,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   jaeger:
     build:
@@ -157,6 +158,7 @@ services:
     networks:
       - backend
     restart: always
+    privileged: true
 
   dtm:
     build:
